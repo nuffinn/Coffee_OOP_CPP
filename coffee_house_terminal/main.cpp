@@ -1,5 +1,6 @@
 #include <iostream>
 #include <limits>  // Include this header for std::numeric_limits
+#include "resources/headers/Product.h"
 #include "resources/headers/User.h"
 #include "resources/headers/ProductDatabase.h"
 
@@ -48,9 +49,25 @@ int main() {
                             switch (productChoice) {
                                 case 1:
                                     {
-                                        // Code to add a new product
-                                        // Product product = createProduct(); // Implement a function to get product details
-                                        // productDB.AddProduct(product);
+                                        std::string name;
+                                        double price;
+                                        int productID;
+
+                                        std::cout << "Enter product name: ";
+                                        std::cin.ignore();
+                                        std::getline(std::cin, name);
+
+                                        std::cout << "Enter product price: ";
+                                        std::cin >> price;
+
+                                        std::cout << "Enter product ID: ";
+                                        std::cin >> productID;
+
+                                        Product newProduct(name, price, productID);
+
+                                        // Add the new product to the product database.
+                                        productDB.AddProduct(newProduct);
+                                        std::cout << "Product added successfully!" << std::endl;
                                     }
                                     break;
 

@@ -182,6 +182,7 @@ CMakeFiles/Coffee.dir/main.cpp.o: main.cpp \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/limits \
+  resources/headers/Product.h \
   resources/headers/User.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \

@@ -146,6 +146,7 @@ CMakeFiles/Coffee.dir/main.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/limits \
+ /home/starburst/coffee_house_terminal/coffee_house_terminal/resources/headers/Product.h \
  /home/starburst/coffee_house_terminal/coffee_house_terminal/resources/headers/User.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \

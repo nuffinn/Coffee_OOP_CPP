@@ -11,7 +11,6 @@ private:
 
 public:
     Product(const std::string& name, double price, int productID);
-
     std::string GetName() const;
     double GetPrice() const;
     int GetProductID() const;
