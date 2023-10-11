@@ -150,4 +150,6 @@ CMakeFiles/Coffee.dir/main.cpp.o: \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc
+ /usr/include/c++/11/bits/vector.tcc \
+ /home/starburst/coffee_house_terminal/coffee_house_terminal/resources/headers/ProductDatabase.h \
+ /home/starburst/coffee_house_terminal/coffee_house_terminal/resources/headers/Product.h

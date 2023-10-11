@@ -1,6 +1,7 @@
 #include <iostream>
 #include <limits>  // Include this header for std::numeric_limits
 #include "resources/headers/User.h"
+#include "resources/headers/ProductDatabase.h"
 
 int main() {
     std::string filename = "users.txt"; // File to store user data
@@ -27,6 +28,74 @@ int main() {
 
                     if (User::LogIn(username, password)) {
                         std::cout << "Login successful. Welcome, " << username << "!" << std::endl;
+
+                        // Create a product database for the logged-in user
+                        ProductDatabase productDB("products.txt");
+
+                        while (true) {
+                            std::cout << "\nProduct Management Menu:" << std::endl;
+                            std::cout << "1. Add a product" << std::endl;
+                            std::cout << "2. Edit a product by productID" << std::endl;
+                            std::cout << "3. Delete a product by productID" << std::endl;
+                            std::cout << "4. Find a product by productID" << std::endl;
+                            std::cout << "5. Show all products" << std::endl;
+                            std::cout << "6. Log out" << std::endl;
+
+                            int productChoice;
+                            std::cout << "Enter your choice: ";
+                            std::cin >> productChoice;
+
+                            switch (productChoice) {
+                                case 1:
+                                    {
+                                        // Code to add a new product
+                                        // Product product = createProduct(); // Implement a function to get product details
+                                        // productDB.AddProduct(product);
+                                    }
+                                    break;
+
+                                case 2:
+                                    {
+                                        // Code to edit a product
+                                        // int productID = getProductIDFromUser(); // Implement a function to get the productID
+                                        // Product updatedProduct = createProduct(); // Implement a function to get updated product details
+                                        // productDB.EditProduct(productID, updatedProduct);
+                                    }
+                                    break;
+
+                                case 3:
+                                    {
+                                        // Code to delete a product
+                                        // int productID = getProductIDFromUser(); // Implement a function to get the productID
+                                        // productDB.DeleteProduct(productID);
+                                    }
+                                    break;
+
+                                case 4:
+                                    {
+                                        // Code to find a product
+                                        // int productID = getProductIDFromUser(); // Implement a function to get the productID
+                                        // Product foundProduct = productDB.FindProduct(productID);
+                                        // displayProduct(foundProduct); // Implement a function to display product details
+                                    }
+                                    break;
+
+                                case 5:
+                                    productDB.ShowProducts(); // Show all products
+                                    break;
+
+                                case 6:
+                                    std::cout << "Logging out." << std::endl;
+                                    break;
+
+                                default:
+                                    std::cout << "Invalid product management choice. Please enter a valid option." << std::endl;
+                            }
+
+                            if (productChoice == 6) {
+                                break; // Exit the product management menu and return to the main menu
+                            }
+                        }
                     } else {
                         std::cout << "Login failed. Invalid username or password." << std::endl;
                     }
@@ -52,7 +121,6 @@ int main() {
 
             case 3:
                 std::cout << "Exiting the program." << std::endl;
-                User::SaveUsers(filename); // Save user data before exiting
                 return 0;
 
             default:
@@ -66,4 +134,3 @@ int main() {
 
     return 0;
 }
-

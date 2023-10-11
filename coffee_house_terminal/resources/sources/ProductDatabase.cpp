@@ -1,17 +1,20 @@
 #include "../headers/ProductDatabase.h"
 #include "../headers/Product.h" // Include the Product class header
+#include <fstream>
+#include <algorithm>
+#include <iostream>
 
 ProductDatabase::ProductDatabase(const std::string& filename) : filename(filename) {
     LoadProducts();
 }
 
 // Add a new product to the database.
-void AddProduct(const Product& product) {
+void ProductDatabase::AddProduct(const Product& product) {
     products.push_back(product);
 }
 
 // Edit an existing product in the database by productID.
-void EditProduct(int productID, const std::string& newName, double newPrice) {
+void ProductDatabase::EditProduct(int productID, const std::string& newName, double newPrice) {
     for (Product& product : products) {
         if (product.GetProductID() == productID) {
             product.SetName(newName);
@@ -22,7 +25,7 @@ void EditProduct(int productID, const std::string& newName, double newPrice) {
 }
 
 // Delete a product from the database by productID.
-void DeleteProduct(int productID) {
+void ProductDatabase::DeleteProduct(int productID) {
     products.erase(
         std::remove_if(products.begin(), products.end(),
                        [productID](const Product& product) { return product.GetProductID() == productID; }),
@@ -30,7 +33,7 @@ void DeleteProduct(int productID) {
 }
 
 // Store the products in a file.
-void SaveProducts() {
+void ProductDatabase::SaveProducts() {
     std::ofstream file(filename);
     if (file.is_open()) {
         for (const Product& product : products) {
@@ -41,7 +44,7 @@ void SaveProducts() {
 }
 
 // Load products from the file.
-void LoadProducts() {
+void ProductDatabase::LoadProducts() {
     std::ifstream file(filename);
     if (file.is_open()) {
         products.clear(); // Clear existing products before loading from file.
@@ -57,7 +60,7 @@ void LoadProducts() {
 }
 
 // Display all products.
-void ShowProducts() {
+void ProductDatabase::ShowProducts() {
     for (const Product& product : products) {
         std::cout << "Product ID: " << product.GetProductID() << ", Name: " << product.GetName()
                   << ", Price: $" << product.GetPrice() << std::endl;
