@@ -1,0 +1,3 @@
+/home/starburst/coffee_house_terminal/coffee_house_terminal/CMakeFiles/Coffee.dir
+/home/starburst/coffee_house_terminal/coffee_house_terminal/CMakeFiles/edit_cache.dir
+/home/starburst/coffee_house_terminal/coffee_house_terminal/CMakeFiles/rebuild_cache.dir
