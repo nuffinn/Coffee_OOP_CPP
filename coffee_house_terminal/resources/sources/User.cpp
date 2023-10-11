@@ -66,8 +66,5 @@ void User::LoadUsers(const std::string& filename) {
         }
         file.close();
     }
-    for (const User& user : users) {
-        std::cout << "Username: " << user.username << ", Password: " << user.password << std::endl;
-    }
 }
 
