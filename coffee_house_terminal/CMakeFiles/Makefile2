@@ -81,12 +81,12 @@ clean: CMakeFiles/Coffee.dir/clean
 CMakeFiles/Coffee.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coffee.dir/build.make CMakeFiles/Coffee.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coffee.dir/build.make CMakeFiles/Coffee.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/starburst/coffee_house_terminal/coffee_house_terminal/CMakeFiles --progress-num=1,2 "Built target Coffee"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/starburst/coffee_house_terminal/coffee_house_terminal/CMakeFiles --progress-num=1,2,3,4,5 "Built target Coffee"
 .PHONY : CMakeFiles/Coffee.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Coffee.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/starburst/coffee_house_terminal/coffee_house_terminal/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/starburst/coffee_house_terminal/coffee_house_terminal/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Coffee.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/starburst/coffee_house_terminal/coffee_house_terminal/CMakeFiles 0
 .PHONY : CMakeFiles/Coffee.dir/rule

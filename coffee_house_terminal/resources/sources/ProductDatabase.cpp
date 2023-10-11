@@ -1,5 +1,5 @@
-#include "headers/ProductDatabase.h"
-#include "headers/Product.h" // Include the Product class header
+#include "../headers/ProductDatabase.h"
+#include "../headers/Product.h" // Include the Product class header
 
 ProductDatabase::ProductDatabase(const std::string& filename) : filename(filename) {
     LoadProducts();

@@ -153,6 +153,78 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coffee.dir/build.make CMakeFiles/Coffee.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+resources/sources/Product.o: resources/sources/Product.cpp.o
+.PHONY : resources/sources/Product.o
+
+# target to build an object file
+resources/sources/Product.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coffee.dir/build.make CMakeFiles/Coffee.dir/resources/sources/Product.cpp.o
+.PHONY : resources/sources/Product.cpp.o
+
+resources/sources/Product.i: resources/sources/Product.cpp.i
+.PHONY : resources/sources/Product.i
+
+# target to preprocess a source file
+resources/sources/Product.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coffee.dir/build.make CMakeFiles/Coffee.dir/resources/sources/Product.cpp.i
+.PHONY : resources/sources/Product.cpp.i
+
+resources/sources/Product.s: resources/sources/Product.cpp.s
+.PHONY : resources/sources/Product.s
+
+# target to generate assembly for a file
+resources/sources/Product.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coffee.dir/build.make CMakeFiles/Coffee.dir/resources/sources/Product.cpp.s
+.PHONY : resources/sources/Product.cpp.s
+
+resources/sources/ProductDatabase.o: resources/sources/ProductDatabase.cpp.o
+.PHONY : resources/sources/ProductDatabase.o
+
+# target to build an object file
+resources/sources/ProductDatabase.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coffee.dir/build.make CMakeFiles/Coffee.dir/resources/sources/ProductDatabase.cpp.o
+.PHONY : resources/sources/ProductDatabase.cpp.o
+
+resources/sources/ProductDatabase.i: resources/sources/ProductDatabase.cpp.i
+.PHONY : resources/sources/ProductDatabase.i
+
+# target to preprocess a source file
+resources/sources/ProductDatabase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coffee.dir/build.make CMakeFiles/Coffee.dir/resources/sources/ProductDatabase.cpp.i
+.PHONY : resources/sources/ProductDatabase.cpp.i
+
+resources/sources/ProductDatabase.s: resources/sources/ProductDatabase.cpp.s
+.PHONY : resources/sources/ProductDatabase.s
+
+# target to generate assembly for a file
+resources/sources/ProductDatabase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coffee.dir/build.make CMakeFiles/Coffee.dir/resources/sources/ProductDatabase.cpp.s
+.PHONY : resources/sources/ProductDatabase.cpp.s
+
+resources/sources/User.o: resources/sources/User.cpp.o
+.PHONY : resources/sources/User.o
+
+# target to build an object file
+resources/sources/User.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coffee.dir/build.make CMakeFiles/Coffee.dir/resources/sources/User.cpp.o
+.PHONY : resources/sources/User.cpp.o
+
+resources/sources/User.i: resources/sources/User.cpp.i
+.PHONY : resources/sources/User.i
+
+# target to preprocess a source file
+resources/sources/User.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coffee.dir/build.make CMakeFiles/Coffee.dir/resources/sources/User.cpp.i
+.PHONY : resources/sources/User.cpp.i
+
+resources/sources/User.s: resources/sources/User.cpp.s
+.PHONY : resources/sources/User.s
+
+# target to generate assembly for a file
+resources/sources/User.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coffee.dir/build.make CMakeFiles/Coffee.dir/resources/sources/User.cpp.s
+.PHONY : resources/sources/User.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +237,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... resources/sources/Product.o"
+	@echo "... resources/sources/Product.i"
+	@echo "... resources/sources/Product.s"
+	@echo "... resources/sources/ProductDatabase.o"
+	@echo "... resources/sources/ProductDatabase.i"
+	@echo "... resources/sources/ProductDatabase.s"
+	@echo "... resources/sources/User.o"
+	@echo "... resources/sources/User.i"
+	@echo "... resources/sources/User.s"
 .PHONY : help
 
 

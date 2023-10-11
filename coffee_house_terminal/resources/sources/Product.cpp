@@ -1,4 +1,4 @@
-#include "headers/Product.h"
+#include "../headers/Product.h"
 
 Product::Product(const std::string& name, double price, int productID)
     : name(name), price(price), productID(productID) {}

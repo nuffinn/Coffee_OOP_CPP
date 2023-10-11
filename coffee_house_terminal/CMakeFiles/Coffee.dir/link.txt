@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic CMakeFiles/Coffee.dir/main.cpp.o -o Coffee 
+/usr/bin/c++ -rdynamic CMakeFiles/Coffee.dir/main.cpp.o CMakeFiles/Coffee.dir/resources/sources/Product.cpp.o CMakeFiles/Coffee.dir/resources/sources/ProductDatabase.cpp.o CMakeFiles/Coffee.dir/resources/sources/User.cpp.o -o Coffee 

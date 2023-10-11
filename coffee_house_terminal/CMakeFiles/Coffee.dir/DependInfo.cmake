@@ -9,6 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/starburst/coffee_house_terminal/coffee_house_terminal/main.cpp" "CMakeFiles/Coffee.dir/main.cpp.o" "gcc" "CMakeFiles/Coffee.dir/main.cpp.o.d"
+  "/home/starburst/coffee_house_terminal/coffee_house_terminal/resources/sources/Product.cpp" "CMakeFiles/Coffee.dir/resources/sources/Product.cpp.o" "gcc" "CMakeFiles/Coffee.dir/resources/sources/Product.cpp.o.d"
+  "/home/starburst/coffee_house_terminal/coffee_house_terminal/resources/sources/ProductDatabase.cpp" "CMakeFiles/Coffee.dir/resources/sources/ProductDatabase.cpp.o" "gcc" "CMakeFiles/Coffee.dir/resources/sources/ProductDatabase.cpp.o.d"
+  "/home/starburst/coffee_house_terminal/coffee_house_terminal/resources/sources/User.cpp" "CMakeFiles/Coffee.dir/resources/sources/User.cpp.o" "gcc" "CMakeFiles/Coffee.dir/resources/sources/User.cpp.o.d"
   )
 
 # Targets to which this target links.
